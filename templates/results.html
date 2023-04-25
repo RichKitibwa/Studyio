@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Results{% endblock %}
+
+{%block content%}
+  <div class="results">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="{{ url_for('home') }}">Studyio</a>
+    </nav>
+    <h1 class="results-head">Search Results for "{{ keyword }}"</h1>
+    {% if results %}
+      {% for result in results %}
+        <div class="card" style="width: 30rem;">
+          <div class="card-body">
+            <h5 class="card-title">{{ result.title }}</h5>
+            <p class="card-text">{{ result.description }}</p>
+            <a href="{{ result.url }}" class="btn btn-primary" target="_blank">Learn</a>
+          </div>
+        </div>
+      {% endfor %}
+      
+    {% else %}
+      <p>No results found for "{{ keyword }}"</p>
+    {% endif %}
+  </div>  
+{% endblock %}

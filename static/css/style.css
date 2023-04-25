@@ -1,0 +1,71 @@
+html, body {
+    height: 100%;
+}
+
+.home {
+    background-image: url("/static/images/bg_image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+h1.home-title {
+    font-family: Arial, sans-serif;
+    font-size: 48px;
+    color: white;
+    font-weight: 100;
+    text-align: center;
+    padding-top: 50px;
+}
+
+h3.sub-title {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+}
+
+.add-tutorial-form {
+    display: flex;
+    justify-content: center;
+}
+
+h1.add-tutorial-head {
+    font-family: Arial, sans-serif;
+    font-size: 35px;
+    color: black;
+    font-weight: 100;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.admin {
+    background-color: #F3F4F6;
+    height: 100%;
+}
+
+.card {
+    margin: auto;
+}
+
+.results {
+    background-color: #F3F4F6;
+    height: 100%;
+}
+
+h1.results-head {
+    font-family: Arial, sans-serif;
+    font-size: 35px;
+    color: black;
+    font-weight: 100;
+    text-align: center;
+    padding-top: 50px;
+}
+
